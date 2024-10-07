@@ -1,21 +1,4 @@
-.page {
-  background-image: url(./background.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
 
-  font-family: var(--font-amsterdam);
-}
-.container {
-  position: absolute;
-  width: 100%;
-  bottom: 30%;
-  text-align: center;
-  font-weight: 700;
-
-}
 .sentence {
   font-size: 2rem;
   text-align: center;
@@ -24,4 +7,45 @@
 .date {
   font-size: 1.3rem;
   text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .page {
+    background-image: url(./background90.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+    font-family: var(--font-amsterdam);
+  }
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    transform: rotate(270deg) translateY(190%);
+  }
+}
+
+@media (min-width: 576px) {
+  .page {
+    background-image: url(./background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+    font-family: var(--font-amsterdam);
+  }
+  
+  .container {
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
+    text-align: center;
+  }
 }
